@@ -146,7 +146,20 @@ Features were developed on independent branches and merged into `master` after t
 
 ---
 
-## 八、结论 / Conclusion
+## 八、自动化测试汇总 / Automated Test Summary
+
+```text
+colcon test --packages-select Calculator
+Summary: 29 tests, 0 errors, 0 failures, 5 skipped
+```
+
+- gtest 用例 AddTwoIntsTest：6/6 通过（含 5 个代表性用例 + 1 个一致性用例）
+- launch_testing：服务端启动与退出码检查通过
+- lint（flake8 / pep257 / uncrustify / lint_cmake / cppcheck）：通过
+
+---
+
+## 九、结论 / Conclusion
 
 Calculator 功能包已完成话题发布/订阅、加法服务端/客户端、Launch 启动、以及不少于 5 个代表性单元测试。自动化测试与手工验证均通过，满足课程/项目要求。
 
@@ -154,7 +167,7 @@ The Calculator package delivers publisher/subscriber, add_two_ints server/client
 
 ---
 
-## 九、附录：目录结构 / Appendix: Tree
+## 十、附录：目录结构 / Appendix: Tree
 
 ```
 Calculator/
